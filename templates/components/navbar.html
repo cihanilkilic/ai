@@ -1,0 +1,71 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background: linear-gradient(135deg, #222, #4400ff);">
+    <div class="container d-flex align-items-center">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold fs-4 text-white me-2" href="#">
+        <img src="{% static 'atxaisoft/ai24.png' %}" alt="Logo" class="img-fluid">
+      </a>
+
+      <!-- Mobil Arama Çubuğu -->
+      <div class="flex-grow-1 d-lg-none">
+        <form class="w-100">
+          <input class="form-control rounded-pill border-0 bg-light shadow-sm px-4 py-2"
+            type="search" placeholder="Ara..." aria-label="Arama">
+        </form>
+      </div>
+
+      <!-- Menü Butonu -->
+      <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+        <i class="bi bi-list-nested text-white fs-1"></i> <!-- fs-1, fs-2, fs-3 şeklinde deneyebilirsin -->
+
+      </button>
+
+      <!-- Menü -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-white fw-medium" href="#">Hakkımızda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-medium" href="#" role="button"
+              data-bs-toggle="dropdown">Hizmetler</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Geliştirme</a></li>
+              <li><a class="dropdown-item" href="{% url "asistan:asistan" %}">Asistan</a></li>
+              <li><a class="dropdown-item" href="#">SEO Optimizasyonu</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Destek</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Desktop Arama Çubuğu -->
+        <div class="d-none d-lg-flex mx-auto w-50">
+          <form class="search-form w-100">
+            <input class="form-control rounded-pill border-0 bg-light shadow-sm px-4 py-2"
+              type="search" placeholder="Ara..." aria-label="Arama">
+          </form>
+        </div>
+
+        <!-- Mobilde Menü İçinde Butonlar -->
+        <div class="d-lg-none text-center mt-3">
+          <a class="btn btn-outline-light rounded-pill w-100 mb-2 py-2" href="{% url "user:sign_in" %}">Giriş Yap</a>
+          <a class="btn btn-light text-dark rounded-pill w-100 py-2" href="{% url "user:sign_up" %}">Kayıt Ol</a>
+        </div>
+      </div>
+
+      <!-- Desktop Giriş & Kayıt Butonları -->
+      <div class="d-none d-lg-flex gap-2">
+
+
+
+
+        <a class="btn btn-outline-light rounded-pill px-4 py-2" href="{% url "user:sign_in" %}">Giriş Yap</a>
+        <a class="btn btn-light text-dark rounded-pill px-4 py-2" href="{% url "user:sign_up" %}">Kayıt Ol</a>
+
+
+      </div>
+    </div>
+  </nav>

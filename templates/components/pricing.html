@@ -1,0 +1,39 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/pricing.css' %}">
+
+<div class="container my-5">
+    <div class="d-flex align-items-center mb-4">
+      <h2 class="me-3">FİYATLARIMIZ</h2>
+      <hr class="flex-grow-1" style="margin: 0;">
+    </div>
+
+    <!-- Yalnızca yatay kaydırılabilir hale getiren div -->
+    <div class="overflow-auto d-flex flex-nowrap">
+      <div class="card me-3 border-0 shadow-sm rounded-3 product-card" style="flex: 0 0 auto;">
+        <img src="{% static 'atxaisoft/at5.png' %}" class="card-img-top" alt="Free Service" style="height: 250px; object-fit: cover;">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold text-dark">Free Service</h5>
+          <p class="card-text text-muted">Ücretsiz hizmet paketi ile temel özelliklere erişim.</p>
+          <button class="btn product-btn">ÜCRETSİZ HİZMETİ İNCELE</button>
+        </div>
+      </div>
+
+      <div class="card me-3 border-0 shadow-sm rounded-3 product-card" style="flex: 0 0 auto;">
+        <img src="{% static 'atxaisoft/at5.png' %}" class="card-img-top" alt="Pay as you go" style="height: 250px; object-fit: cover;">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold text-dark">Pay as You Go</h5>
+          <p class="card-text text-muted">Kullandıkça öde, ihtiyacınıza göre ödeme yapın.</p>
+          <button class="btn product-btn">HİZMETİ İNCELE</button>
+        </div>
+      </div>
+
+      <div class="card me-3 border-0 shadow-sm rounded-3 product-card" style="flex: 0 0 auto;">
+        <img src="{% static 'atxaisoft/at5.png' %}" class="card-img-top" alt="Custom" style="height: 250px; object-fit: cover;">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold text-dark">Custom</h5>
+          <p class="card-text text-muted">Özel ihtiyaçlarınıza göre tamamen özelleştirilmiş hizmetler.</p>
+          <button class="btn product-btn">ÖZEL HİZMETİ İNCELE</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,34 @@
+.custom-hr {
+  border: 0;
+  height: 4px;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+.vibrant-card {
+  background-color:  #003092;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vibrant-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.vibrant-btn {
+  background-color: #ff5733;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.vibrant-btn:hover {
+  background-color: white;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  transform: scale(1.1);
+}
